@@ -138,14 +138,14 @@ input {
   width: 10%;
   background: #d9d9d9;
   color: #555;
-  float: right;
+  float: center;
   text-align: center;
   font-size: 16px;
   cursor: pointer;
   transition: 0.3s;
   margin-bottom: 20px;
-  margin-left: 50px;
-  margin-right: 100px;
+  margin-left: 400px;
+  margin-right: 0px;
 }
 
 .nexBtn:hover {
@@ -156,8 +156,16 @@ input {
 </head>
 <body>
 
-<div class="container">
-  <h2>DAFTAR PINJAMAN BUKU</h2>
+<div class="container" align="center">
+  <div class="col-md-9 personal-info">
+    <h2>DAFTAR PINJAMAN BUKU</h2>
+        <div class="alert alert-danger alert-dismissable">
+          <a class="panel-close close" data-dismiss="alert">×</a> 
+          <i class="fa fa-coffee"></i>
+         <strong>buku tidak dapat dipinjam.</strong>.
+        </div>
+        <h3>Data Pinjaman</h3>
+        
   <table class="table">
     <thead>
       <tr>
@@ -167,13 +175,13 @@ input {
         <th>Judul</th>
         <th>Sub-Genre</th>
         <th>Semester</th>
-        <th>Tahun Terbit</th>
+        <th>Tahun</th>
         <th>Pengarang</th>
         <th>Penerbit</th>
       </tr>
     </thead>
     <tbody>
-      <tr class="active">
+      <tr class="info">
         <td>1</td>
         <td>ILL01</td>
         <td>kaisardicky@gmail.com</td>
@@ -185,7 +193,7 @@ input {
         <td>Eros Fracos Brotherhood</td>
       </tr> 
       <div style="text-align: right;">   
-      <tr class="active">
+      <tr class="info">
         <td>2</td>
         <td>ILL01</td>
         <td>kaisardicky@gmail.com</td>
@@ -198,12 +206,13 @@ input {
       </tr>
     </tbody>
   </table>
+<div class="container" align="center">
+  <div class="col-md-9 personal-info">
+  <a href="welcomepus.html" button class="nexBtn" role="button">kembali ke beranda</a>
 </div>
-
+</div>
+</div>
+</div>
 </body>
-<div class="footer">
-  <a href = "dikembalikanpusa.html" span class="nexBtn">boleh pinjam</span></a>
-  <a href = "dikembalikanpusb.html" span class="nexBtn">tolak pinjam</span></a>
-</div>
 </html>
 
